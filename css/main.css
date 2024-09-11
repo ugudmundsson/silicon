@@ -724,7 +724,7 @@ footer {
     .client-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding-top: 6rem;
+        padding-top: 2rem;
         padding-bottom: 6rem;
     }
 
@@ -734,20 +734,11 @@ footer {
     }
 
     .client-head {
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 800;
-        width: 306px;
+        width: 350px;
     }
 
-    .client.box {
-        
-    }
- 
-    #quotesicon1 {
-        padding-left: 18px;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
     .client-box {
         background-color: #ffffff;
         box-shadow: 5px 5px 5px #aaaaaa;
@@ -757,7 +748,8 @@ footer {
         padding: 20px;
         border: 5px none;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-top: 30px;
+        position: relative;
       }
     #client-box1 {
         grid-column: 2 / 3;
@@ -765,24 +757,79 @@ footer {
         padding-left: 25px;
         padding-top: 100px;
         width: 416px;
-        
+    }
+    #client-box2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        padding-left: 25px;
+        padding-top: 100px;
+        width: 416px;
+    }
+    #quotesicon1 {
+        top: -7%;
+        left: 4%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        position: absolute;
     }
     #rating1 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        padding-top: 80px;
-        padding-left: 25px;
+        left: 4%;
+        top: 14%;
+        position: absolute;
     }
     #clientface1 {
+        left: 4%;
+        top: 73%;
         grid-column: 2 / 3;
         grid-row: 1 / 2; 
-        padding-top: 280px;
-        padding-left: 25px;
+        position: absolute;
+
     }
     #clientname1 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;  
+        position: absolute;
+        left: 20%;
+        top: 66%;
     }
+    #work {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;  
+        position: absolute;
+        left: 20%;
+        top: 80%;
+        font-size: 14px;
+    }
+    .pg6-bg {
+        background-color: #fff;
+    }
+    .pg7-bg {
+        background-color: #F3F6FF;
+    }
+
+    .subscribe {
+        display: flex;
+        height: 222px;
+        gap: 2rem;
+        padding-left: 8rem;
+    }
+    #notification {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    #subshead {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 800;
+        width: 416px;
+    }
+
+
+
 }
 
 

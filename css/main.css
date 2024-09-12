@@ -647,28 +647,34 @@ footer {
     }
     #transfer-head2 {
         grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        display: grid;
-        justify-content: start;
+        grid-row: 4 / 5;
+        width: 526px;
+        font-size: 26px;
     }
-
+    .icon-text {
+        font-size: 16px;
+        width: 249px;
+        display: grid;
+        gap: 1rem;
+    }
     .transfer-icon {
         display: flex;
         height: 60px;
-        gap: 10rem;   
+        gap: 3rem;
     } 
     #transfer-icon {
         grid-column: 2 / 3;
-        grid-row: 2 / 3;
-
+        grid-row: 5 / 6;
     }
     #transfer-img1 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        display: flex;
+        justify-content: end;
     }
     #transfer-img2 {
         grid-column: 1 / 2;
-        grid-row: 2 / 3;  
+        grid-row: 4 / 8;  
     }
 
     .btn-transfer-grp .btn-transfer {
@@ -713,10 +719,8 @@ footer {
     }
     #btn-transfer2 {
         grid-column: 2 / 3;
-        grid-row: 2 / 3; 
-        display: grid;
-        justify-content: start;
-        align-items: end;
+        grid-row: 7 / 8; 
+
     }
     /* -----------------------------page5--------------------------- */
     
@@ -920,6 +924,7 @@ footer {
     .pg7-bg {
         background-color: #F3F6FF;
         border-radius: 20px;
+        margin-bottom: 2rem;
     }
     .subscribe {
         display: flex;

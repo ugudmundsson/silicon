@@ -25,10 +25,7 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
 }
 
 .wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
     background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-    height: 100%;
 }
 
 .container {
@@ -71,44 +68,33 @@ a:hover {
     align-items: center;
     text-decoration: none;
 }
-
 .btn-primary:hover {
    background-color: var(--clr-gray); 
    color: var(--clr-white);
    text-decoration: none;
 }
-
 .btn-primary img {
     margin-right: 0.5rem;
-
 }
-
 .btn-mobile {
     background-color: transparent;
     border: none;
     font-size: 2rem;
 }
-
-
-
 .btn-toggle-switch {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .btn-toggle-switch .label {
  display: none;
 }
-
-
 .toggle-switch {
     position: relative;
     display: inline-block;
     width: 45px;
     height: 25px;
 }
-
 .toggle-switch input {
     opacity: 0;
 }
@@ -188,8 +174,6 @@ header .container {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
-
 
 .textfront {
     display: grid;
@@ -373,7 +357,6 @@ footer {
     .grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        height: 100vh;
     }
     
     .item {
@@ -430,11 +413,15 @@ footer {
         display: flex;
     }
 
-
-    
+/* ----------------------------page1------------------------------ */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 5rem;
+    }
     #item-head {
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-row: 1 / 2;
         place-items: center;
         
         .head {
@@ -442,12 +429,12 @@ footer {
             font-weight: 800;
             font-size: 56px;
             width: 490px;
-            padding-bottom: 4rem;
+            padding-bottom: 2rem;
         }
     }
     #item-text {
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-row: 1 / 2;
         place-items: end;
         padding-bottom: 4rem;
         
@@ -459,23 +446,33 @@ footer {
         }
         
     }
- 
     .store {
         display: flex;
         justify-content: left;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .store-btn {
+            background-color: #000;
+            width: 100%;
+            border-radius: 10px;
+            height: 44px;
+            width: 138px;
+            
+        }
 
     }
     #item-store {
         grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
         place-items: start;
         
     }
     #item-discover {
         grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
         place-items: end;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
 
         .text {
             text-align: left;
@@ -490,10 +487,9 @@ footer {
         justify-content: left;
     }
     #item-mobiler {
-        grid-column: 2 / -1;
-        grid-row: 1 / 4;
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
         place-items: end;
-        padding-bottom: 4rem;
     }
 /* ---------------------------page2------------------------------- */
     h1 {
@@ -617,7 +613,7 @@ footer {
        
     }
 
-/* --------------------------------------pg4--------------------------- */
+/* --------------------------------------page4--------------------------- */
     .transfer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -631,11 +627,6 @@ footer {
         font-weight: 800;
         width: 465px;
     }
-    /* .email i {
-        color: #B4B7C9;
-        position: absolute;
-        margin-left: 12px;
-    } */
     .transfer-text i {
         margin-right: 10px;
     }
@@ -727,7 +718,7 @@ footer {
         justify-content: start;
         align-items: end;
     }
-    /* -----------------------------pg5--------------------------- */
+    /* -----------------------------page5--------------------------- */
     
     .pg5-bg {
         background-color: #F3F6FF;
@@ -873,20 +864,6 @@ footer {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-    
-    .btn-drop {
-        height: 50px;
-        line-height: 40px;  
-        width: 50px;  
-        font-size: 2em;
-        font-weight: bold;
-        border-radius: 50%;
-        background-color: #6366F1;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-    }
-
     #dropdown {
         grid-column: 2 / 3;
         grid-row: 1 / 4;
@@ -942,6 +919,7 @@ footer {
     /* ---------------------------Page 7--------------------------- */
     .pg7-bg {
         background-color: #F3F6FF;
+        border-radius: 20px;
     }
     .subscribe {
         display: flex;

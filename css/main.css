@@ -208,6 +208,18 @@ header .container {
         cursor: pointer;
     }
 }
+.discover-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+
+    cursor: pointer;
+}
+.discover-btn:hover {
+    box-shadow: 5px 5px 5px #eee;
+}
 .discover {
     display: flex;
     align-items: center;
@@ -369,8 +381,7 @@ footer {
 /* --------------------------DESKTOP--------------------------------- */
 @media (min-width: 1400px) {
     .container {
-        max-width: 1320px;
-        
+        max-width: 1320px;    
     }
     .btn-toggle-switch .label {
         display: block;
@@ -391,7 +402,6 @@ footer {
     #spons1, #spons2 {
         display: flex;
     }
-
 /* ----------------------------page1------------------------------ */
     .grid {
         display: grid;
@@ -427,13 +437,11 @@ footer {
         }
     
     }
-
     .store {
         display: flex;
         justify-content: left;
         padding-top: 0;
         padding-bottom: 0;
-
         .store-btn {
             background-color: #000;
             width: 100%;
@@ -442,7 +450,6 @@ footer {
             width: 180px;
             
         }
-
     }
     #item-store {
         grid-column: 1 / 2;
@@ -461,7 +468,6 @@ footer {
             font-size: 18px;
             width: 400px;
         }
- 
     }
     #item-mobiler {
         grid-column: 2 / 4;
@@ -478,17 +484,14 @@ footer {
         font-weight: 800;
 
     }
-
     .iconer {
         display: flex;
     }
-
     .icon {
         width: 60px;
         height: 60px;
         margin-left: 1.5rem;
     }
-
     .icontext {
         display: grid;
         margin-left: 26px;
@@ -503,12 +506,9 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         padding-bottom: 7rem;
     }
-
     #mobilfeatures {
         grid-column: 1 / 2;
         grid-row: 1 / 6;
-
-
     }
     #appfeatures {
         grid-column: 2 / 3;
@@ -547,19 +547,15 @@ footer {
         grid-column: 3 / 4;
         grid-row: 5 / 6;
     }
-
 /* -------------------------page3---------------------------------- */
     .pg3-bg {
         background-color: #F3F6FF;
     }
-
     .slider-work {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding-top: 2rem;
         padding-bottom: 6rem;
-        
-  
     }
     .slider-mobiler {
         display: flex;
@@ -575,31 +571,25 @@ footer {
         font-weight: 800;
         text-align: center;
     }
-
     .pg3-text {
         grid-column: 1 / 4;
         grid-row: 3 / 4;
         text-align: center;
     }
-    
     #pg3-h4 {
         font-size: 24px;
         font-weight: 800;
     }
     #pg3-text {
         font-size: 16px;
-        font-weight: 400;
-       
+        font-weight: 400; 
     }
-
 /* --------------------------------------page4--------------------------- */
     .transfer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 5rem;
-
     }
-
     .transfer-head {
         padding-top: 3rem;
         font-size: 32px;
@@ -609,7 +599,6 @@ footer {
     .transfer-text i {
         margin-right: 10px;
     }
-
     .transfer-text {
             font-size: 16px;
             font-weight: 400;
@@ -655,7 +644,6 @@ footer {
         grid-column: 1 / 2;
         grid-row: 4 / 8;  
     }
-
     .btn-transfer-grp .btn-transfer {
         background-color: #6366F1;
         border: none;
@@ -673,21 +661,18 @@ footer {
         font-weight: 600;
         cursor: pointer;
         float: left;
-      }
-      
-      .btn-transfer-grp .btn-transfer:not(:last-child) {
+    }
+    .btn-transfer-grp .btn-transfer:not(:last-child) {
         border-right: none;
-      }
-      
-      .btn-transfer-grp .btn-transfer:hover {
-        background-color: #606299;
-      }
-
-     .btn-transfer-grp {
+    }
+    .btn-transfer-grp .btn-transfer:hover {
+        background-color: #6366F1;
+        box-shadow: 2px 2px 5px #8488f0,
+        -2px -2px 5px #b3b3b3;
+    }
+    .btn-transfer-grp {
         padding-bottom: 4rem;
-     }
-
-
+    }
     #btn-transfer1 {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -719,9 +704,12 @@ footer {
         font-weight: 800;
         width: 350px;
     }
+    .client-box:hover {
+        box-shadow: 5px 5px 5px #aaaaaa,
+        -10px -10px 10px #fff;
+    }
     .client-box {
         background-color: #ffffff;
-        box-shadow: 5px 5px 5px #aaaaaa;
         height: 350px;
         width: 350px;
         font-size: 18px;
@@ -730,7 +718,8 @@ footer {
         border-radius: 20px;
         margin-top: 30px;
         position: relative;
-      }
+        box-shadow: 10px 10px 10px #eee;
+    }
     #client-box1 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -807,6 +796,9 @@ footer {
         display: flex;
         gap: 2rem;
     }
+    .contactbox:hover {
+        box-shadow: 5px 5px 5px #aaaaaa;
+    }
     .contactbox {
         background-color: #ffffff;
         height: 166px;
@@ -817,7 +809,6 @@ footer {
         border: 1px solid #E2E5F1;
         border-radius: 20px;
         margin-top: 30px;
-
         .alink {
             color: green;
             background-color: transparent;
@@ -861,27 +852,28 @@ footer {
         transition: 0.4s;
         box-shadow: 5px 5px 5px #eee;
         text-decoration: none;
-      }
-      .active, .accordion:hover {
-        background-color: #fff; 
-      }
-      .accordion:after {
+    }
+    .active, .accordion:hover {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #aaaaaa; 
+    }
+    .accordion:after {
         content: '\276F';
         color: #000000;
         font-weight: bold;
         float: right;
         margin-left: 5px;
-      }
-      .active:after {
+    }
+    .active:after {
         content: "\276E";
-      }
-      .panel {
+    }
+    .panel {
         padding: 0 18px;
         background-color: rgb(255, 255, 255);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-      }
+    }
     /* ---------------------------Page 7--------------------------- */
     .pg7-bg {
         background-color: #F3F6FF;
@@ -944,10 +936,12 @@ footer {
         font-weight: 600;
         cursor: pointer;
         float: left;
-      }
-      .btn-sub:hover {
-        background-color: #606299;
-      }
+    }
+    .btn-sub:hover {
+        background-color: #6366F1;
+        box-shadow: 2px 2px 5px #8488f0,
+        0px -2px 5px #b3b3b3;
+    }
 
 
 

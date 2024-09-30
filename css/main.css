@@ -4,6 +4,10 @@
     --clr-dark: #0B0F19;
     --clr-primary: #6366F1;
     --clr-gray: #9397AD;
+    /* --clr-gray:
+    --clr-gray:
+    --clr-gray:
+    --clr-gray: */
     --clr-white: #ffffff;
     --clr-grayborder: #e2e5f1;  
     --clr-btn: #6366F1;
@@ -305,7 +309,6 @@ footer {
     justify-content: center;
 }
 
-
 /* ---------------------------------TABLET--------------------------- */
 @media (min-width: 768px) {
     .container {
@@ -427,9 +430,7 @@ footer {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .icontext {
-        
-    }
+
     .pg3-head {
         display: flex;
         justify-content: center;
@@ -516,8 +517,8 @@ footer {
         place-content: center;
         transform: rotate(90deg);
         box-shadow: 2px 2px 2px #8488f0;
-
     }
+
     .panel {
         padding: 0 18px;
         background-color: rgb(255, 255, 255);
@@ -986,8 +987,10 @@ footer {
         grid-row: 7 / 8; 
     }
     /* -----------------------------page5--------------------------- */
+    
     .pg5-bg {
         background-color: #F3F6FF;
+        display: block;
     }
     .client-grid {
         display: grid;

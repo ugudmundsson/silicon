@@ -3,11 +3,16 @@
 :root {
     --clr-dark: #0B0F19;
     --clr-primary: #6366F1;
-    --clr-gray: #9397AD;
-    /* --clr-gray:
-    --clr-gray:
-    --clr-gray:
-    --clr-gray: */
+    --clr-gray-100: #F3F6FF;
+    --clr-gray-200: #EFF2FC;
+    --clr-gray-300: #E2E5F1;
+    --clr-gray-400: #D4D7E5;
+    --clr-gray-500: #B4B7C9;
+    --clr-gray-600: #9397AD;
+    --clr-gray-700: #565973;
+    --clr-gray-800: #33354D;
+    --clr-gray-700: #0B0F19;
+
     --clr-white: #ffffff;
     --clr-grayborder: #e2e5f1;  
     --clr-btn: #6366F1;
@@ -75,7 +80,7 @@ a:hover {
     text-decoration: none;
 }
 .btn-primary:hover {
-   background-color: var(--clr-gray); 
+   background-color: var(--clr-gray-500); 
    color: var(--clr-white);
    text-decoration: none;
 }
@@ -125,7 +130,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--clr-gray);
+    background-color: var(--clr-gray-600);
     transition: all 0.2s;
 }
 
@@ -207,10 +212,9 @@ header .container {
 
     .store-btn {
         background-color: #131022;
-        width: 100%;
         border-radius: 10px;
         height: 50px;
-        width: 370px;
+        width: 350px;
         cursor: pointer;
     }
 }
@@ -237,7 +241,7 @@ footer {
     font-size: 14px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: var(--clr-gray);
+    color: var(--clr-gray-600);
     
     .container {
         display: flex;
@@ -273,7 +277,10 @@ footer {
 .mobiler {
     display: none;
 }
-
+.iconer {
+    display: grid;
+    padding-bottom: 2rem;
+}
 #mobilfeatures {
     display: none;
 }
@@ -285,6 +292,7 @@ footer {
 #apptext {
     display: flex;
     text-align: center;
+    padding-bottom: 2rem;
 }
 .iconheader {
     font-size: 20px;
@@ -300,14 +308,216 @@ footer {
     grid-column: 2/4;
     grid-row: 1/3;
 }
+.slider-work {
+    text-align: center;
+}
 .page4 {
     display: none;
 }
 .faq {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
+.pg3-bg {
+    background-color: #F3F6FF;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.slidergrp {
+    display: none;
+}
+#slider1, #slider3  {
+    display: none;
+}
+.pg5-bg {
+    display: none;
+}
+
+.contact-us {
+    display: none;
+}
+.accordion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#dropdown {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.dropdown {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    gap: 15px;
+}
+.accordion {
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 366px;
+    height: 74px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: 5px 5px 5px #eee;
+    text-decoration: none;
+}
+.active, .accordion:hover {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #aaaaaa; 
+}
+.accordion:after {
+    content: '\276F';
+    background-color: #F3F6FF;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #000;
+    float: right;
+    display: grid;
+    place-content: center;
+    transform: rotate(90deg);
+}
+.active:after {
+    content: "\276E";
+    background-color: #6366F1;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    display: grid;
+    place-content: center;
+    transform: rotate(90deg);
+    box-shadow: 2px 2px 2px #8488f0;
+
+}
+.panel {
+    padding: 0 18px;
+    background-color: rgb(255, 255, 255);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.btn-contact {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-content: center;
+    padding-top: 3rem;
+}
+    .btn-contact-us {
+    background-color: #6366F1;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    width: 162px;
+    height: 50px;
+    color: white;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    float: left;
+
+}
+.btn-contact-us:hover {
+    background-color: #6366F1;
+    box-shadow: 2px 2px 5px #8488f0,
+    0px -2px 5px #b3b3b3;
+}
+
+/* ---------------------------Page 7--------------------------- */
+.pg7-bg {
+    background-color: #F3F6FF;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    height: 251px;
+    width: 366px;
+}
+.subscribe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#notification {
+    display: grid;
+    grid-column: 1/2;
+    align-items: center;
+
+}
+#subshead {
+    display: grid;
+    grid-column: 2/3;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+    width: 230px;
+    
+}
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    grid-column: 1/3;
+}
+.input-sub {
+    padding-left: 2rem;
+    width: 215px;
+    height: 50px;
+    color: #B4B7C9;
+    font-size: 16px;
+    border: 1px solid #B4B7C9;
+    border-radius: 10px 0 0 10px;
+}
+.input-sub::placeholder {
+    color: #B4B7C9;
+}
+.email i {
+    color: #B4B7C9;
+    position: absolute;
+    margin-left: 12px;
+}
+.btn-sub {
+    background-color: #6366F1;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    width: 115px;
+    height: 50px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    float: left;
+}
+.btn-sub:hover {
+    background-color: #6366F1;
+    box-shadow: 2px 2px 5px #8488f0,
+    0px -2px 5px #b3b3b3;
+}
+.subnews {
+    display: none;
+}
+
+
+
+
 
 /* ---------------------------------TABLET--------------------------- */
 @media (min-width: 768px) {
@@ -664,6 +874,9 @@ footer {
     .subnews {
         display: none;
     }
+    .btn-contact{
+        display: none;
+    }
     
 
 
@@ -881,6 +1094,10 @@ footer {
     .slidergrp {
         display: none;
     }
+    #slider1, #slider3  {
+        display: block;
+    }
+
 /* --------------------------------------page4--------------------------- */
     .page4 {
         display: block;

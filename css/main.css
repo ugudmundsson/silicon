@@ -13,11 +13,14 @@
     --clr-gray-800: #33354D;
     --clr-gray-900: #0B0F19;
 
+
+    --clr-bg: #fff;
     --clr-white: #ffffff;
     --clr-grayborder: #e2e5f1;  
     --clr-btn: #6366F1;
-    --clr-backgroundlight: ;
-    --clr-backgrounddark: ;
+    --clr-text-heading: #0B0F19;
+    --clr-text-body: #0b0f19;
+    --clr-accordian: #ffffff;
 
     --container-padding: 1rem;
     -o-transition-time: all 0.2s;
@@ -30,10 +33,13 @@
 }
 
 .dark {
-    --clr-bg: var(--clr-gray-900);
-    --clr-gray-100: #0B0F19;
-    --clr-gray-900: #ffffff;
-    --clr-white: #33354D;
+    --clr-bg: #0B0F19;
+    --clr-gray-100: #1c1c29;
+    --clr-accordian: rgb(250, 250, 250, 0.04);
+    --clr-darktransparent: rgb(250, 250, 250, 0.04);
+    --clr-text-heading: #f3f6ff;
+    --clr-text-body: #f3f6ff; 
+    --clr-white: rgb(250, 250, 250, 0.04);
     color-scheme: dark;
 }
 
@@ -61,6 +67,7 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
 
 
 body { 
+    background-color: var(--clr-bg);
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -73,7 +80,7 @@ body {
     text-decoration: none;
 }
 .silicon-logo  {
-    color: var(--clr-gray-900);
+    color: var(--clr-text-heading);
     font-size: 23px;
     font-weight: 800;
     align-self: center;
@@ -91,7 +98,7 @@ a:hover {
 
 .btn-primary {
     background-color: var(--clr-primary);
-    color: var(--clr-white);
+    color: var(--clr-text-body);
     border-radius: 8px;
     padding: 12px 25px;
     display: flex;
@@ -140,7 +147,7 @@ a:hover {
 
 .toggle-switch input:checked + .slider:before {
     transform: translateX(18px);
-    background-color: var(--clr-white);
+    background-color: #fff;
 }
 
 .toggle-switch .slider {
@@ -272,6 +279,9 @@ footer {
     .credit {
         display: none;
     }
+}
+.spons-bg {
+    background-color: var(--clr-bg);
 }
 #spons {
     display: none;
@@ -998,6 +1008,10 @@ footer {
         place-items: end;
     }
 /* ---------------------------page2------------------------------- */
+        
+    .page2-bg {
+        background-color: var(--clr-bg);
+    }
     h1 {
         margin-top: 0;
         margin-bottom: 0;
@@ -1121,6 +1135,7 @@ footer {
 /* --------------------------------------page4--------------------------- */
     .page4 {
         display: block;
+        background-color: var(--clr-bg);
     }    
 
     .transfer-grid {
@@ -1250,7 +1265,7 @@ footer {
     }
     .client-box {
         background-color: var(--clr-white);
-        color: var(--clr-gray-900);
+        color: var(--clr-text-body);
         height: 350px;
         width: 350px;
         font-size: 18px;
@@ -1314,7 +1329,7 @@ footer {
     }
 /* ---------------------------Page 6-------------------------------- */
     .pg6-bg {
-        background-color: #fff;
+        background-color: var(--clr-bg);
     }
     .faq {
         display: grid;
@@ -1342,7 +1357,7 @@ footer {
         box-shadow: 5px 5px 5px #aaaaaa;
     }
     .contactbox {
-        background-color: #ffffff;
+        background-color: var(--clr-white);
         height: 166px;
         width: 196px;
         font-size: 14px;
@@ -1381,8 +1396,8 @@ footer {
     }
     .accordion {
         border-radius: 15px;
-        background-color: #fff;
-        color: #000000;
+        background-color: var(--clr-accordian);
+        color: var(--clr-text-body);
         cursor: pointer;
         padding: 18px;
         width: 746px;
@@ -1396,8 +1411,8 @@ footer {
         text-decoration: none;
     }
     .active, .accordion:hover {
-        background-color: #fff;
-        box-shadow: 5px 5px 5px #aaaaaa; 
+        background-color: var(--clr-accordian);
+        box-shadow: 5px 5px 5px var(--clr-gray-100); 
     }
     .accordion:after {
         content: '\276F';
@@ -1417,7 +1432,7 @@ footer {
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        color: #fff;
+        color: var(--clr-gray-100);
         font-weight: bold;
         float: right;
         display: grid;
@@ -1436,7 +1451,7 @@ footer {
     
     /* ---------------------------Page 7--------------------------- */
     .pg7-bg {
-        background-color: #F3F6FF;
+        background-color: var(--clr-gray-100);
         border-radius: 20px;
         margin-bottom: 2rem;
     }
@@ -1456,7 +1471,10 @@ footer {
         align-items: center;
         font-size: 24px;
         font-weight: 800;
-        width: 416px;
+        width: 526px;
+    }
+    .subnews {
+        display: block;
     }
     .email {
         display: flex;

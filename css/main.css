@@ -98,7 +98,7 @@ a:hover {
 
 .btn-primary {
     background-color: var(--clr-primary);
-    color: var(--clr-text-body);
+    color: #fff;
     border-radius: 8px;
     padding: 12px 25px;
     display: flex;
@@ -124,6 +124,57 @@ a:hover {
     align-items: center;
     gap: 10px;
 }
+
+
+/* --------------------- */
+
+.toggle-switch {
+    display: flex;
+}
+label {
+    width: 47px;
+    height: 25px;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgb(0,0 ,0,0.4), inset 0px -5px 15px rgb(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+label:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(180deg,var(--clr-white), var(--clr-btn));
+    border-radius: 180px;
+    box-shadow:  1px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input:checked + label {
+    background: #242424;
+}
+input:checked + label:after {
+    left: 45px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#3a3a3a,#777);
+}
+label:active:after{
+    width: 25px;
+}
+
+/* ---------------------------- */
+
+
+/* 
 .btn-toggle-switch .label {
  display: none;
 }
@@ -136,20 +187,16 @@ a:hover {
 .toggle-switch input {
     opacity: 0;
 }
-
 .toggle-switch input:checked + .slider {
     background-color: var(--clr-primary);
 }
-
 .toggle-switch input:focus + .slider {
     box-shadow: 0 0 1px var(--clr-primary);
 }
-
 .toggle-switch input:checked + .slider:before {
     transform: translateX(18px);
-    background-color: #fff;
+    background: linear-gradient(180deg,#3a3a3a,#777);
 }
-
 .toggle-switch .slider {
     position: absolute;
     cursor: pointer;
@@ -158,9 +205,8 @@ a:hover {
     right: 0;
     bottom: 0;
     background-color: var(--clr-gray-600);
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
-
 .toggle-switch .slider:before {
     position: absolute;
     content: "";
@@ -168,24 +214,28 @@ a:hover {
     width: 20px;
     left: 3px;
     bottom: 2.5px;
-    background-color: var(--clr-white);
-    transition: all 0.2s;
-
+    background: linear-gradient(180deg,var(--clr-white), var(--clr-btn));
+    transition: all 0.3s;
 }
 .toggle-switch .slider.round {
     border-radius: 35px;
 }
-
 .toggle-switch .slider.round::before {
     border-radius: 50%;
 }
+ */
+
+
+
+
+
 
 .navbar {
     display: none;
 }
 
 .nav-link {
-    color: var(--clr-gray-900);
+    color: var(--clr-text-body);
     font-weight: 600;
     text-decoration: none;
 }
@@ -549,7 +599,7 @@ footer {
 
 
 
-/* ---------------------------------TABLET--------------------------- */
+/* -------------------------------------------TABLET--------------------------------------- */
 @media (min-width: 768px) {
     .container {
         max-width: 720px
@@ -911,7 +961,7 @@ footer {
 
 
 }
-/* --------------------------DESKTOP--------------------------------- */
+/* -------------------------------------DESKTOP----------------------------------------------- */
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;    
@@ -1260,8 +1310,7 @@ footer {
         width: 350px;
     }
     .client-box:hover {
-        box-shadow: 5px 5px 5px #aaaaaa,
-        -10px -10px 10px #fff;
+        box-shadow: 5px 5px 5px #aaaaaa;
     }
     .client-box {
         background-color: var(--clr-white);
@@ -1274,7 +1323,7 @@ footer {
         border-radius: 20px;
         margin-top: 30px;
         position: relative;
-        box-shadow: 10px 10px 10px #eee;
+        box-shadow: 6px 6px 6px #eee;
     }
     #client-box1 {
         grid-column: 2 / 3;
@@ -1363,7 +1412,7 @@ footer {
         font-size: 14px;
         font-weight: 400;
         padding: 20px;
-        border: 1px solid #E2E5F1;
+        border: 1px solid var(--clr-gray-200);
         border-radius: 20px;
         margin-top: 30px;
         .alink {
@@ -1489,9 +1538,10 @@ footer {
         font-size: 16px;
         border: 1px solid #B4B7C9;
         border-radius: 10px 0 0 10px;
+        visibility: visible;
     }
     .input-sub::placeholder {
-        color: #B4B7C9;
+        color: #5c5c5b;
     }
     .email i {
         color: #B4B7C9;

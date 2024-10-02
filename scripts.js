@@ -1,4 +1,4 @@
-const darkmodeSwitch = document.querySelector('#darkmode-switch')
+const darkmodeSwitch = document.querySelector('#darkmode-toggle')
 const hasDarkmode = localStorage.getItem('darkmode')
 
 if(hasDarkmode == null) {

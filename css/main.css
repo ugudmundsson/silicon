@@ -560,6 +560,7 @@ footer {
     font-size: 16px;
     border: 1px solid #B4B7C9;
     border-radius: 10px 0 0 10px;
+    visibility: visible;
 }
 .input-sub::placeholder {
     color: #B4B7C9;
@@ -920,6 +921,7 @@ footer {
         font-size: 16px;
         border: 1px solid #B4B7C9;
         border-radius: 10px 0 0 10px;
+        visibility: visible;
     }
     .input-sub::placeholder {
         color: #B4B7C9;
@@ -1198,6 +1200,7 @@ footer {
         font-size: 32px;
         font-weight: 800;
         width: 465px;
+
     }
     .transfer-text i {
         margin-right: 10px;
@@ -1205,7 +1208,7 @@ footer {
     .transfer-text {
             font-size: 16px;
             font-weight: 400;
-            color: #565973;
+            color: var(--clr-text-body);
             padding-bottom: 14rem;
             display: grid;
             gap: 1rem;
@@ -1245,7 +1248,9 @@ footer {
     }
     #transfer-img2 {
         grid-column: 1 / 2;
-        grid-row: 4 / 8;  
+        grid-row: 4 / 8;
+        display: flex;
+        justify-content: center;    
     }
     .btn-transfer-grp .btn-transfer {
         background-color: #6366F1;
@@ -1456,7 +1461,7 @@ footer {
         outline: none;
         font-size: 15px;
         transition: 0.4s;
-        box-shadow: 5px 5px 5px #eee;
+        box-shadow: 5px 5px 5px #858585;
         text-decoration: none;
     }
     .active, .accordion:hover {
@@ -1492,9 +1497,10 @@ footer {
     }
     .panel {
         padding: 0 18px;
-        background-color: rgb(255, 255, 255);
+        background-color: var(--clr-accordian);
         max-height: 0;
         overflow: hidden;
+        border-radius: .5rem;
         transition: max-height 0.2s ease-out;
     }
     

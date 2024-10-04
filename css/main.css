@@ -42,8 +42,9 @@
     --clr-text-body: #f3f6ff; 
     --clr-white: rgb(250, 250, 250, 0.04);
     --clr-storebtn: #F3F6FF; 
-    color-scheme: dark;
     --clr-invert: 1;
+    
+    color-scheme: dark;
 }
 
 html {
@@ -231,12 +232,34 @@ header .container {
     padding-bottom: 5rem;
 
     .store-btn {
-        background-color: var(--clr-gray-900);
+        background-color: var(--clr-storebtn);
         border-radius: 10px;
         height: 50px;
         width: 350px;
         cursor: pointer;
         border: none;
+    }
+    #applestore {
+        filter: invert(var(--clr-invert));
+        transform: scale(130%);
+    }
+    .googlestore {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        
+    }
+    #googleget {
+        display: flex;
+        font-size: 10px;
+        color: var(--clr-gray-100);
+    }
+    #googleplay {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--clr-gray-100);
     }
 }
 .discover-btn {
@@ -606,11 +629,34 @@ footer {
         padding-bottom: 5rem;
         
     .store-btn {
-            background-color: #000;
+            background-color: var(--clr-storebtn);
             width: 100%;
             border-radius: 10px;
             height: 45px;
-            width: 130px;
+            width: 160px;
+        }
+        #applestore {
+            filter: invert(var(--clr-invert));
+            transform: scale(110%);
+        }
+        .googlestore {
+            display: flex;
+            width: 100%;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+            padding-left: .5rem;
+            
+        }
+        #googleget {
+            display: flex;
+            font-size: 10px;
+            color: var(--clr-gray-100);
+        }
+        #googleplay {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--clr-gray-100);
         }
     }
     .container {
@@ -970,18 +1016,39 @@ footer {
         justify-content: left;
         padding-top: 0;
         padding-bottom: 0;
+        width: 100%;
         
         .store-btn {
             background-color: var(--clr-storebtn);
             width: 100%;
             border-radius: 10px;
             height: 52px;
-            width: 180px;
         }
         #applestore {
             filter: invert(var(--clr-invert));
             transform: scale(130%);
         }
+        .googlestore {
+            display: flex;
+            width: 100%;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 2rem;
+            
+        }
+        #googleget {
+            display: flex;
+            font-size: 10px;
+            color: var(--clr-gray-100);
+        }
+        #googleplay {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--clr-gray-100);
+
+        }
+
     }
     #item-store {
         grid-column: 1 / 2;

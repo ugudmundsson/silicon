@@ -417,7 +417,7 @@ footer {
     font-size: 15px;
     transition: 0.4s;
     text-decoration: none;
-    border: 1px solid var(--clr-gray-300);
+    border: 0.5px solid var(--clr-gray-100);
 }
 .active, .accordion:hover {
     background-color: var(--clr-accordian); 
@@ -446,11 +446,9 @@ footer {
     display: grid;
     place-content: center;
     transform: rotate(90deg);
-    
-
 }
 .panel {
-    border: 0.5px solid var(--clr-gray-300);
+    border: 0.5px solid var(--clr-gray-100);
     padding: 0 18px;
     background-color: var(--clr-accordian);
     max-height: 0;
@@ -812,6 +810,7 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+        border: none;
     }
 
     .accordion-grid {

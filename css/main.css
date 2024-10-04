@@ -21,9 +21,10 @@
     --clr-text-heading: #0B0F19;
     --clr-text-body: #0b0f19;
     --clr-accordian: #ffffff;
-
+    --clr-storebtn: #000;
     --container-padding: 1rem;
     -o-transition-time: all 0.2s;
+    --clr-invert: 0;
 }
 
 
@@ -40,7 +41,9 @@
     --clr-text-heading: #f3f6ff;
     --clr-text-body: #f3f6ff; 
     --clr-white: rgb(250, 250, 250, 0.04);
+    --clr-storebtn: #F3F6FF; 
     color-scheme: dark;
+    --clr-invert: 1;
 }
 
 html {
@@ -170,66 +173,6 @@ input:checked + label:after {
 label:active:after{
     width: 25px;
 }
-
-/* ---------------------------- */
-
-
-/* 
-.btn-toggle-switch .label {
- display: none;
-}
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 45px;
-    height: 25px;
-}
-.toggle-switch input {
-    opacity: 0;
-}
-.toggle-switch input:checked + .slider {
-    background-color: var(--clr-primary);
-}
-.toggle-switch input:focus + .slider {
-    box-shadow: 0 0 1px var(--clr-primary);
-}
-.toggle-switch input:checked + .slider:before {
-    transform: translateX(18px);
-    background: linear-gradient(180deg,#3a3a3a,#777);
-}
-.toggle-switch .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--clr-gray-600);
-    transition: all 0.3s;
-}
-.toggle-switch .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 3px;
-    bottom: 2.5px;
-    background: linear-gradient(180deg,var(--clr-white), var(--clr-btn));
-    transition: all 0.3s;
-}
-.toggle-switch .slider.round {
-    border-radius: 35px;
-}
-.toggle-switch .slider.round::before {
-    border-radius: 50%;
-}
- */
-
-
-
-
-
-
 .navbar {
     display: none;
 }
@@ -293,18 +236,20 @@ header .container {
         height: 50px;
         width: 350px;
         cursor: pointer;
+        border: none;
     }
 }
 .discover-btn {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--clr-bg);
     border: none;
     cursor: pointer;
+    
 }
 .discover-btn:hover {
-    box-shadow: 5px 5px 5px #eee;
+    box-shadow: 2px 2px 2px #eee;
 }
 .discover {
     display: flex;
@@ -312,7 +257,6 @@ header .container {
     justify-content: center;
     gap: 2rem;
     padding-bottom: 2rem;
-
 }
 footer {
     font-size: 14px;
@@ -667,7 +611,6 @@ footer {
             border-radius: 10px;
             height: 45px;
             width: 130px;
-            
         }
     }
     .container {
@@ -1027,13 +970,17 @@ footer {
         justify-content: left;
         padding-top: 0;
         padding-bottom: 0;
+        
         .store-btn {
-            background-color: #000;
+            background-color: var(--clr-storebtn);
             width: 100%;
             border-radius: 10px;
             height: 52px;
             width: 180px;
-            
+        }
+        #applestore {
+            filter: invert(var(--clr-invert));
+            transform: scale(130%);
         }
     }
     #item-store {

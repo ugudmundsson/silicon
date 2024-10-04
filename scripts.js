@@ -34,7 +34,7 @@ function disableDarkMode() {
   document.documentElement.classList.remove('dark')
 }
 
-<!-- tagit script ifrån W3Schools och stylat själv -->
+// <!-- tagit script ifrån W3Schools och stylat själv -->
 
 var acc = document.getElementsByClassName("accordion");
 var i;

@@ -21,6 +21,8 @@
     --clr-text-heading: #0B0F19;
     --clr-text-body: #0b0f19;
     --clr-accordian: #ffffff;
+    --clr-accordian-btn1: #F3F6FF;
+    --clr-accordian-btn2: #000;
     --clr-storebtn: #000;
     --container-padding: 1rem;
     -o-transition-time: all 0.2s;
@@ -37,6 +39,8 @@
     --clr-bg: #0B0F19;
     --clr-gray-100: #1c1c29;
     --clr-accordian: rgb(250, 250, 250, 0.04);
+    --clr-accordian-btn1: rgb(250, 250, 250, 0.04);
+    --clr-accordian-btn2: #F3F6FF;
     --clr-darktransparent: rgb(250, 250, 250, 0.04);
     --clr-text-heading: #f3f6ff;
     --clr-text-body: #f3f6ff; 
@@ -399,10 +403,8 @@ footer {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     display: grid;
-    gap: 15px;
 }
 .accordion {
-    border-radius: 15px;
     background-color: var(--clr-accordian);
     color: var(--clr-text-body);
     cursor: pointer;
@@ -414,20 +416,19 @@ footer {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    box-shadow: 5px 5px 5px #eee;
     text-decoration: none;
+    border: 1px solid var(--clr-gray-300);
 }
 .active, .accordion:hover {
-    background-color: var(--clr-accordian);
-    box-shadow: 5px 5px 5px #aaaaaa; 
+    background-color: var(--clr-accordian); 
 }
 .accordion:after {
     content: '\276F';
-    background-color: #F3F6FF;
+    background-color: var(--clr-accordian-btn1);
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    color: #000;
+    color: var(--clr-accordian-btn2);
     float: right;
     display: grid;
     place-content: center;
@@ -439,16 +440,17 @@ footer {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    color: var(--clr-text-body);
+    color: #fff;
     font-weight: bold;
     float: right;
     display: grid;
     place-content: center;
     transform: rotate(90deg);
-    box-shadow: 2px 2px 2px #8488f0;
+    
 
 }
 .panel {
+    border: 0.5px solid var(--clr-gray-300);
     padding: 0 18px;
     background-color: var(--clr-accordian);
     max-height: 0;
@@ -490,7 +492,7 @@ footer {
 
 /* ---------------------------Page 7--------------------------- */
 .pg7-bg {
-    background-color: var(--clr-white);
+    background-color: var(--clr-gray-100);
     border-radius: 20px;
     margin-bottom: 2rem;
     height: 251px;
@@ -770,20 +772,20 @@ footer {
         outline: none;
         font-size: 15px;
         transition: 0.4s;
-        box-shadow: 5px 5px 5px #eee;
+        box-shadow: 3px 3px 3px #aaa;
         text-decoration: none;
     }
     .active, .accordion:hover {
         background-color: var(--clr-accordian);
-        box-shadow: 5px 5px 5px #aaaaaa; 
+        box-shadow: 4px 4px 4px #eee; 
     }
     .accordion:after {
         content: '\276F';
-        background-color: var(--clr-accordian);
+        background-color: var(--clr-accordian-btn1);
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        color: #000;
+        color: var(--clr-accordian-btn2);
         float: right;
         display: grid;
         place-content: center;
@@ -833,6 +835,7 @@ footer {
     .faq {
         display: grid;
         text-align: center;
+        justify-content: center;
         gap: 1rem;
         padding-bottom: 3rem;
     
@@ -880,7 +883,7 @@ footer {
     }
     /*------------------------------------------------  */
     .pg7-bg {
-        background-color: var(--clr-white);
+        background-color: var(--clr-gray-100);
         border-radius: 20px;
         margin-bottom: 2rem;
     }
@@ -1406,6 +1409,7 @@ footer {
     }
     .faq {
         display: grid;
+        text-align: left;
         justify-content: start;
         gap: 2rem;
     }
@@ -1480,20 +1484,20 @@ footer {
         outline: none;
         font-size: 15px;
         transition: 0.4s;
-        box-shadow: 5px 5px 5px #858585;
+        box-shadow: 3px 3px 3px #aaa;
         text-decoration: none;
     }
     .active, .accordion:hover {
         background-color: var(--clr-accordian);
-        box-shadow: 5px 5px 5px var(--clr-gray-100); 
+        box-shadow: 4px 4px 4px #eee; 
     }
     .accordion:after {
         content: '\276F';
-        background-color: #F3F6FF;
+        background-color: var(--clr-accordian-btn1);
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        color: #000;
+        color: var(--clr-accordian-btn2);
         float: right;
         display: grid;
         place-content: center;
@@ -1505,7 +1509,7 @@ footer {
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        color: var(--clr-gray-100);
+        color: #fff;
         font-weight: bold;
         float: right;
         display: grid;

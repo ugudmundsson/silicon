@@ -193,7 +193,9 @@ label:active:after{
     color: var(--clr-primary);
     text-decoration: underline;
 }
-
+#textdarkmode {
+    display: none;
+}
 #auth-signin {
     display: none;
 }
@@ -571,6 +573,9 @@ footer {
 @media (min-width: 768px) {
     .container {
         max-width: 720px
+    }
+    #textdarkmode {
+        display: block;
     }
     .btn-toggle-switch .label {
         display: block;
